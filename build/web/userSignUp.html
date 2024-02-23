@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styleUserSignUp.css">
+</head>
+<body>
+    
+    <div class="box">
+        <span class="borderLine"></span>
+        <form action="jsp/userSignUp.jsp" method="post">
+            <h2>Sign in</h2>
+            <div class="inputBox">
+                <input type="text" id="email" required="required" name="Email">
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" id="password" required="required" name="Password">
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" id="name" required="required" name="Name">
+                <span>Name</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="date" id="date1" required="required" name="Date">
+                <span>Date of Birth</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" id="data1" required="required" name="Data">
+                <span>About Yourself</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="#">Forgot Password</a>
+                <a href="#">Login</a>
+                <!--<a href="index.html">Home</a>-->
+            </div>
+            <input type="submit" value="SignUp" onclick="">
+        </form>
+    </div>
+<!--    <script>
+//        const Email = document.getElementById("email").value;
+        const Datas= document.querySelectorAll(".inputBox");
+        
+        Datas.forEach(function (Datas){
+            console.log(Datas);
+            Datas.addEventListener('click', function (e){
+                console.log(e);
+                console.log(e.target);
+                
+                if(e.target.id =="email" && e.target.id=='password' && e.target.id=='name' && e.target.id=='date1'){
+                    window.location.assign("index.html");
+                }
+            });
+        });
+//        var Password = document.getElementById("Password").value;
+//        if(Email=="" && Password=="123"){
+//            window.location.assign("loginAdmin");
+        
+    </script>-->
+
+</body>
+</html>

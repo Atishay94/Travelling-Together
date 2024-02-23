@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Change Data</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+</style>
+<style>
+    /* CSS styles for package cards */
+    .package-card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 10px;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .package-card.selected {
+      border-color: #007bff;
+    }
+    /* CSS styles for images */
+    .package-image {
+      width: 200px;
+      height: 200px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a href="#about">About</a></li>
+</ul>
+    
+    <h2>Location Image</h2>
+    <input type="file" id="fileInput" accept="image/*">
+    <button onclick="changePhoto()">Change Photo</button>
+    <!--<img id="photoCD2" src="../../../assets/london.jpg" alt="Photo">-->
+    
+    <div class="package-card" id="" >
+      <h2>Change Package</h2>
+      <form action="dataChangers.jsp" method="post" name="btn1">
+     <input type="number" name="package1" placeholder="Bronze Package" id="pack" >
+     <input type="number" name="package2" placeholder="Silver Package" id="pack" >
+     <input type="number" name="package3" placeholder="Gold Package" id="pack" >
+     <input type="number" name="package4" placeholder="Platinum Package" id="pack" >
+     <input type="submit" value="Submit" class="submitbtn" name="btn1" onclick="check()">
+      </form>
+  </div>
+    <script>
+        function check(){
+            let subbtn = document.querySelector(".submitbtn");
+            if(subbtn!=null && subbtn.equals("Submit")){
+                alert("Done !");
+            }else{alert("error!");}
+        }
+    </script>
+    <script src="scriptDataChange.js"></script>
+        
+</body>
+</html>
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Record</title>
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Update Record</h2>
+    <form id="updateForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone">
+      </div>
+      <button type="submit">Update</button>
+    </form>
+  </div>
+
+  <script>
+    // Add your JavaScript code here
+    document.getElementById('updateForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get form values
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var phone = document.getElementById('phone').value;
+
+      // Perform update operation (e.g., send data to server, update database)
+
+      // Clear form fields after update
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('phone').value = '';
+
+      alert('Record updated successfully!');
+    });
+  </script>
+
+</body>
+</html>-->

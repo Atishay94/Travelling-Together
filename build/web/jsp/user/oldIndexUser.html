@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+    
+    <!-- <link rel="stylesheet" href="css/flightcss.css" /> -->
+    <title>Bharat_Ghumo</title>
+    <link rel="stylesheet" href="../../css/style2.css">
+    <script src="../../script2.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+        <img src="../../assets/tripwithfriends.png" class="navbar-logo" alt="logo" />
+      <ul class="navbar-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="../../about.html">About us</a></li>
+        <li><a href="../register.jsp">Register</a></li>
+        <li><a href="#">Location</a></li>
+      </ul>
+
+      <div class="profile-dropdown">
+        <div onclick="toggle()" class="profile-dropdown-btn">
+          <div class="profile-img">
+            <i class="fa-solid fa-circle"></i>
+          </div>
+
+          <span
+            >Travel-to-gather
+            <i class="fa-solid fa-angle-down"></i>
+          </span>
+        </div>
+
+        <ul class="profile-dropdown-list">
+          <li class="profile-dropdown-list-item">
+              <a href="jsp/user/userLogin.jsp">
+              <i class="fa-regular fa-user"></i>
+             Login
+            </a>
+<!--              <ul >
+                  <<li class="profile-dropdown-list-item">
+                      <a href="jsp/userLogin.jsp">
+                          User Login
+                      </a>
+                  </li>>
+              </ul>-->
+          </li>
+
+          <li class="profile-dropdown-list-item">
+              <a href="jsp/user/userSignUp.jsp">
+              <i class="fa-regular fa-envelope"></i>
+             User Profile
+            </a>
+          </li>
+
+          <li class="profile-dropdown-list-item">
+              <a href="../../places.html">
+              <i class="fa-solid fa-chart-line"></i>
+              Place
+            </a>
+          </li>
+
+          <li class="profile-dropdown-list-item">
+              <a href="forgotUserPass.jsp">
+              <i class="fa-solid fa-sliders"></i>
+             Forgot Password
+            </a>
+          </li>
+
+          <li class="profile-dropdown-list-item">
+            <a href="#">
+              <i class="fa-regular fa-circle-question"></i>
+              Help & Support
+            </a>
+          </li>
+          <hr />
+
+          <li class="profile-dropdown-list-item">
+              <a href="../../index.html">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              Log out
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+
+    </nav>
+
+
+    <!-- <marquee direction='right' scrollamount='10'>
+      <ul style="display: flex; width: 100px; height:  fit-content; justify-content: 5px;">
+          <li ><a href='#'><img src="assets/banner/banner.png" alt="img">Switzerland</a> </li>
+          <li><a href='#'><img src="assets/banner/banner2.png" alt="img">Australia</a></li>
+          <li><a href='#'><img src="assets/banner/banner3.png" alt="img">Italy</a></li> -->
+          <!-- <li><a href='#'>Content</a></li>
+          <li><a href='#'>Notes</a></li>
+          <li>Contact</li>
+          <li>Solution</li>
+          <li><a href='#'>SignOut</a></li> -->
+      <!-- </ul>
+   </marquee> -->
+
+    <div class="banner">
+      <video src="assets/bgvid.mp4" type="video/mp4" autoplay muted loop></video>
+  
+  <!-- Header -->
+
+  <!-- <div class="content" id="home">  -->
+      <!-- <nav>
+          <img src="./files/logo.png" class="logo" alt="Logo" title="FirstFlight Travels">
+          
+          <ul class="navbar">
+              <li>
+                  <a href="#home">Home</a>
+                  <a href="#locations">Locations</a>
+                  <a href="#package">Packages</a>
+                  <a href="./about.html">About Us</a>
+                  <a href="./about.html">Contact Us</a>
+              </li>
+          </ul>
+      </nav> -->
+
+     
+      <!-- </div> -->
+  </div>
+   <div class="title">
+          <h1>TRAVEL-TO-GETHER</h1>
+          <p>Plan your trip with us and travel around the INDIA with the most affordable packages!</p>
+          <a href="./register.html" class="button">Register Now!</a>
+      </div>
+
+  <!-- <div class="slider_area">
+    <div class="slider_active owl-carousel">
+        <div class="single_slider  d-flex align-items-center slider_bg_3 overlay">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-12 col-md-12">
+                        <div class="slider_text text-center">
+                            <h3>Switzerland</h3>
+                            <p></p>
+                            <a href="destination_details/Switzerland" class="boxed-btn3">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="single_slider  d-flex align-items-center slider_bg_2 overlay">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-12 col-md-12">
+                        <div class="slider_text text-center">
+                            <h3>Australia</h3>
+                            <p></p>
+                            <a href="destination_list/Australia" class="boxed-btn3">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-12 col-md-12">
+                        <div class="slider_text text-center">
+                            <h3>Italy</h3>
+                            <p></p>
+                            <a href="destination_list/Italy" class="boxed-btn3">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  -->
+    
+    <section class="location" id="locationId">
+      <!-- <div class="banner"> -->
+        <!-- <video src="./assets/bgvid.mp4" type="video/mp4" autoplay muted loop></video> -->
+        <div class="search-wrapper">
+          <label for="search">Search Place</label>
+          <input type="search" id="search" data-search>
+        </div>
+        <div class="user-cards" data-user-cards-container></div>
+        <template data-user-template>
+          <div class="card">
+            <div class="header" data-header></div>
+            <div class="body" data-body></div>
+          <!-- </div> -->
+        </div>
+    </section>
+
+    
+
+    </template>
+        <script src="../../script.js"></script>
+  </body>
+</html>
